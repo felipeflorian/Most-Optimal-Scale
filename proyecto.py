@@ -31,11 +31,27 @@ G.add_node("Lima", pos=(-20, -100 ))
 #PANAMA
 G.add_node("CPanama", pos=(0, -70 ))
 
-#ESPAÑA
-G.add_node("Madrid", pos=(80, 40))
 
-#FRANCIA
-G.add_node("Paris", pos=(120, 40))
+#EUROPA
+#Italia
+G.add_node("Roma", pos=())
+G.add_node("Milán", pos=())
+G.add_node("Venecia", pos=())
+
+#Francia
+G.add_node("París", pos=())
+G.add_node("Montpellier", pos=())
+G.add_node("Versalles", pos=())
+
+#España
+G.add_node("Madrid", pos=(80, 40))
+G.add_node("Barcelona", pos=())
+G.add_node("Valencia", pos=())
+
+#Alemania
+G.add_node("Berlín", pos=())
+G.add_node("Roma", pos=())
+G.add_node("Roma", pos=())
 
 #ALEMANIA
 G.add_node("Frankfurt", pos=(170, 80))
@@ -53,7 +69,7 @@ G.add_node("Sidney", pos=(300, -50))
 
 #EMIRATOS ARABES
 #G.add_node("Abu Dhabi", pos=(150, 60))
-"""
+
 #RUSIA
 G.add_node("Sochi", pos=(140, 120))
 G.add_node("Moscu", pos=(150, 90))
