@@ -18,58 +18,58 @@ G.add_node("Versalles", pos=(190,80))
 
 #España
 G.add_node("Madrid", pos=(80, 40))
-G.add_node("Barcelona", pos=())
-G.add_node("Valencia", pos=())
+G.add_node("Barcelona", pos=(100,30))
+G.add_node("Valencia", pos=(110,-10))
 
 #Alemania
 G.add_node("Berlín", pos=(170, 80))
-G.add_node("Roma", pos=(140,70))
-G.add_node("Roma", pos=())
+
+
 
 #Polonia
-G.add_node("Torun", pos=())
-G.add_node("Cracovia", pos=())
-G.add_node("Varsovia", pos=())
+G.add_node("Torun", pos=(190,130))
+G.add_node("Cracovia", pos=(130,150))
+G.add_node("Varsovia", pos=(150,140))
 
-#Reino Unido
-G.add_node("Londres", pos=())
-G.add_node("Mánchester", pos=())
-G.add_node("Oxford", pos=())
+#Inglaterra
+G.add_node("Londres", pos=(100,500))
+G.add_node("Mánchester", pos=(115,480))
+G.add_node("Oxford", pos=(130,490))
 
 #Irlanda
-G.add_node("Dublín", pos=())
-G.add_node("Cork", pos=())
-G.add_node("Kilkenny", pos=())
+G.add_node("Dublín", pos=(150,300))
+G.add_node("Cork", pos=(120,250))
+G.add_node("Kilkenny", pos=(140,320))
 
 #Portugal
-G.add_node("Lisboa", pos=())
-G.add_node("Braga", pos=())
-G.add_node("Lagos", pos=())
+G.add_node("Lisboa", pos=(70,130))
+G.add_node("Braga", pos=(90,140))
+G.add_node("Lagos", pos=(80,150))
 
 #Grecia
-G.add_node("Atenas", pos=())
-G.add_node("Olimpia", pos=())
-G.add_node("Corinto", pos=())
+G.add_node("Atenas", pos=(160,210))
+G.add_node("Olimpia", pos=(140,240))
+G.add_node("Corinto", pos=(130,250))
 
 #Rumanía
-G.add_node("Bucarest", pos=())
-G.add_node("Sibiu", pos=())
-G.add_node("Constanza", pos=())
+G.add_node("Bucarest", pos=(130,50))
+G.add_node("Sibiu", pos=(150,70))
+G.add_node("Constanza", pos=(140,60))
 
 #Austria
-G.add_node("Viena", pos=())
-G.add_node("Hallstatt", pos=())
-G.add_node("Villach", pos=())
+G.add_node("Viena", pos=(150,300))
+G.add_node("Hallstatt", pos=(160,350))
+G.add_node("Villach", pos=(130,320))
 
 #Ucrania
-G.add_node("Kiev", pos=())
-G.add_node("Poltava", pos=())
-G.add_node("Járkov", pos=())
+G.add_node("Kiev", pos=(140,220))
+G.add_node("Poltava", pos=(130,200))
+G.add_node("Járkov", pos=(150,210))
 
 #Finlandia
-G.add_node("Helsinki", pos=())
-G.add_node("Pori", pos=())
-G.add_node("Turku", pos=())
+G.add_node("Helsinki", pos=(180,310))
+G.add_node("Pori", pos=(190,320))
+G.add_node("Turku", pos=(170,290))
 
 #Noruega
 G.add_node("Oslo", pos=())
