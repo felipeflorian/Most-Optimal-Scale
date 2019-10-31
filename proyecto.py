@@ -9,12 +9,12 @@ G = nx.Graph()
 #Italia
 G.add_node("Roma", pos=(100, -60))
 G.add_node("Milán", pos=(80, -30))
-G.add_node("Venecia", pos=())
+G.add_node("Venecia", pos=(130,-70))
 
 #Francia
-G.add_node("París", pos=())
-G.add_node("Montpellier", pos=())
-G.add_node("Versalles", pos=())
+G.add_node("París", pos=(150,60))
+G.add_node("Montpellier", pos=(170,60))
+G.add_node("Versalles", pos=(190,80))
 
 #España
 G.add_node("Madrid", pos=(80, 40))
@@ -288,7 +288,7 @@ G.add_node("Adén", pos=())
 G.add_node("Dhamar", pos=())
 
 
-#AUSTRALIA Y OCEANÍA---------------------------------------------------------------------------
+#OCEANÍA---------------------------------------------------------------------------
 
 #Tasmania
 G.add_node("Hobart", pos=())
