@@ -613,11 +613,34 @@ NorteÁmerica = ["Estados Unidos", "Panamá", "Costa Rica", "Nicaragua", "Cuba",
 G.add_edge("Bogota","Cartagena", weight = 1.21 )
 G.add_edge("Bogota","Medellin", weight = 0.45)
 G.add_edge("Bogota","Miami", weight = 3.17)
-#g.add_edge("Bogota", "Ciudad de Panamá", weight = )
-#g.add_edge("Ciudad de Panamá", "La Habana", weight = ) #Cuba
-#g.add_edge("Ciudad de Panamá", "Valencia", weight = ) #Venezuela
-
-
+G.add_edge("Bogota", "Ciudad de Panamá", weight = )
+G.add_edge("Ciudad de Panamá", "La Habana", weight = ) #Cuba
+G.add_edge("Ciudad de Panamá", "Valencia", weight = ) #Venezuela
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
+G.add_edge()
 
 
 #weight = nx.get_edge_attributes(G, 'weight')
