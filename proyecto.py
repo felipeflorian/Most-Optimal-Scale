@@ -19,8 +19,8 @@ Italia = ["Roma","Milán","Venecia"]
 
 #Francia
 G.add_node("Paris", pos=(150,60))#YA
-G.add_node("Montpellier", pos=(170,60))#YA
-G.add_node("Versalles", pos=(190,80))#YA
+G.add_node("Montpellier", pos=(170,60))
+G.add_node("Versalles", pos=(190,80))
 
 Francia = ["Paris","Montpellier","Versalles"]
 
@@ -34,7 +34,7 @@ España = ["Madrid", "Barcelona", "Valencia"]
 
 
 #Alemania
-G.add_node("Berlín", pos=(170, 80))#YA
+G.add_node("Berlín", pos=(170, 80))
 G.add_node("Hamburgo", pos=(165, 90))
 G.add_node("Fráncfort", pos=(150, 100))#YA
 G.add_node("Zúrich",pos=(170,70))#YA
@@ -46,7 +46,7 @@ Alemania = ["Zúrich","Berlín", "Hamburgo", "Fráncfort"]
 #Polonia
 G.add_node("Torun", pos=(190,130))
 G.add_node("Cracovia", pos=(130,150))
-G.add_node("Varsovia", pos=(150,140))#YA
+G.add_node("Varsovia", pos=(150,140))
 
 Polonia = ["Torun", "Cracovia", "Varsovia"]
 
@@ -60,7 +60,7 @@ Inglaterra = ["Londres", "Mánchester", "Oxford"]
 
 
 #Irlanda
-G.add_node("Dublín", pos=(150,300))#YA
+G.add_node("Dublín", pos=(150,300))
 G.add_node("Cork", pos=(120,250))
 G.add_node("Kilkenny", pos=(140,320))
 
@@ -84,7 +84,7 @@ Grecia = ["Atenas", "Olimpia", "Corinto"]
 
 
 #Rumanía
-G.add_node("Bucarest", pos=(130,50))#YA
+G.add_node("Bucarest", pos=(130,50))
 G.add_node("Sibiu", pos=(150,70))
 G.add_node("Constanza", pos=(140,60))
 
@@ -179,31 +179,6 @@ G.add_node("Abeokuta", pos=(190,-50))
 
 Nigeria = ["Lagos", "Abuya", "Abeokuta"]
 
-
-#Malí
-G.add_node("Bamako", pos=(140,-150))
-G.add_node("Tombuctú", pos=(150,-170))
-G.add_node("Gao", pos=(160,-190))
-
-Malí = ["Bamako", "Tombuctú", "Gao"]
-
-
-#Somalia
-G.add_node("Mogadiscio", pos=(180,-30))
-G.add_node("Kismaayo", pos=(170,-50))
-G.add_node("Hargeisa", pos=(150,-70))
-
-Somalia = ["Mogadiscio", "Kismaayo", "Hargeisa"]
-
-
-#Kenia
-G.add_node("Nairobi", pos=(150,-150))
-G.add_node("Mombasa", pos=(160,-170))
-G.add_node("Malindi", pos=(170,-160))
-
-Kenia = ["Nairobi", "Mombasa", "Malindi"]
-
-
 #Angola
 G.add_node("Luanda", pos=(210,-30))
 G.add_node("Huambo", pos=(200,-50))
@@ -244,7 +219,7 @@ G.add_node("Man", pos=(260,-290))
 CostadeMarfíl = ["Abiyán", "Yamasukro", "Man"]
 
 
-Africa = ["Marruecos", "Argelia", "Egipto", "Sudán", "Nigeria", "Malí", "Somalia", "Kenia", "Angola", "Botsuana", "Sudáfrica", "Madagascar", "Costa de Marfíl"]
+Africa = ["Marruecos", "Argelia", "Egipto", "Sudán", "Nigeria","Angola", "Botsuana", "Sudáfrica", "Madagascar", "Costa de Marfíl"]
 
 
 #ASIA---------------------------------------------------------------------------
@@ -260,7 +235,7 @@ Rusia = ["Moscú","Kazán", "Sochi"]
 #Turquía
 G.add_node("Ankara", pos=(120,350))
 G.add_node("Estambul", pos=(100,300))#YA
-G.add_node("Antalya", pos=(115,325))
+G.add_node("Antalya", pos=(115,325))#YA
 
 Turquía = ["Estambul", "Ankara", "Antalya"]
 
@@ -272,23 +247,6 @@ G.add_node("Nueva Delhi", pos=(120,160))
 
 India = ["Jaipur", "Bombay", "Nueva Delhi"]
 
-
-#Pakistán
-G.add_node("Islamabad", pos=(160,170))
-G.add_node("Multán", pos=(140,140))
-G.add_node("Lahore", pos=(120,120))
-
-Pakistán = ["Islamabad", "Multán", "Lahore"]
-
-
-#Afganistan
-G.add_node("Kabul", pos=(200,210))
-G.add_node("Kandahar", pos=(210,220))
-G.add_node("Ganzi", pos=(190,200))
-
-Afganistan = ["Kabul", "Kandahar", "Ganzi"]
-
-
 #China
 G.add_node("Pekín", pos=(210, 60))
 G.add_node("Shanghái", pos=(230,40))
@@ -296,23 +254,6 @@ G.add_node("Shenzhen", pos=(220,50))
 G.add_node("Hong Kong",pos=(240,60))#YA
 
 China = ["Pekín", "Shanghái", "Shenzhen"]
-
-
-#Irak
-G.add_node("Bagdad", pos=(270,240))
-G.add_node("Mosul", pos=(290,220))
-G.add_node("Erbil", pos=(260,210))
-
-Irak = ["Bagdad", "Mosul", "Erbil"]
-
-
-#Irán
-G.add_node("Teherán", pos=(190,400))
-G.add_node("Yazd", pos=(170,410))
-G.add_node("Tabriz", pos=(180,390))
-
-Irán = ["Teherán", "Yazd", "Tabriz"]
-
 
 #Kazajistán
 G.add_node("Astaná", pos=(200,310))
@@ -363,16 +304,6 @@ G.add_node("Kuantan", pos=(240,140))
 Malasia = ["Malaca", "Putrajaya", "Kuantan"]
 
 
-
-
-#Nepal
-G.add_node("Katmandú", pos=(350,-80))
-G.add_node("Patan", pos=(370,-60))
-G.add_node("Nagarkot", pos=(340,-40))
-
-Nepal = ["Katmandú", "Patan", "Nagarkot"]
-
-
 #Tailandia
 G.add_node("Bangkok", pos=(300,120))
 G.add_node("Ayutthaya", pos=(310,100))
@@ -413,7 +344,7 @@ G.add_node("Dávao", pos=(360,-10))
 Filipinas = ["Manila", "Cebú", "Dávao"]
 
 
-Asia = [Rusia, Turquía, India, Pakistán, Afganistan, China, Irak, Irán, Kazajistán, Uzbekistán, Arabia Saudita, EmiratosÁrabesUnidos, Indonesia, Malasia, Nepal, Tailandia, Corea del Sur, Corea del Norte, Japón, Filipinas]
+Asia = [Rusia, Turquía, India, China,Kazajistán, Uzbekistán, Arabia Saudita, EmiratosÁrabesUnidos, Indonesia, Malasia,Tailandia, CoreaDelSur, CoreaDelNorte, Japón, Filipinas]
 
 
 #OCEANÍA---------------------------------------------------------------------------
@@ -450,11 +381,11 @@ Oceanía = [Tasmania, Australia, Nueva Zelanda]
 #Colombia
 G.add_node("Bogotá", pos=(-100, -100))#YA
 G.add_node("Medellin", pos=(-60,-40))#YA
-G.add_node("Cartagena", pos=(60, -70))#YA
+G.add_node("Cartagena", pos=(60, -70))
 
 
 #Ecuador
-G.add_node("Quito", pos=(-200,-50))
+G.add_node("Quito", pos=(-200,-50))#YA
 G.add_node("Cuenca", pos=(-230,-70))
 G.add_node("Guayaquil", pos=(-250,-90))
 
@@ -500,7 +431,7 @@ SurÁmerica = [Colombia,  Ecuador, Perú, Brasil, Chile, Argentina, Uruguay, Par
 #NORTE ÁMERICA---------------------------------------------------------------------------
 
 #Estados Unidos
-G.add_node("Houston", pos=(-80, 85))#YA
+G.add_node("Houston", pos=(-80, 85))
 G.add_node("Dallas", pos=(-90,100))
 G.add_node("Nueva Orleans", pos=(-100,110))
 G.add_node("Seattle", pos=(-110,120))
@@ -524,7 +455,7 @@ G.add_node("Portland", pos=(-190,90))
 G.add_node("Nashville", pos=(-140,100))
 G.add_node("Indianápolis", pos=(-180,30))
 G.add_node("Mineápolis", pos=(-200,70))
-G.add_node("Chicago", pos=(-210,80))#YA
+G.add_node("Chicago", pos=(-210,80))
 
 
 #Panamá
@@ -556,7 +487,7 @@ G.add_node("La Ceiba", pos=(-340,-230))
 G.add_node("Puerto Cortés", pos=(-320,-260))
 
 #República Dominicana
-G.add_node("Santo Domingo", pos=(-410,-30))#YA
+G.add_node("Santo Domingo", pos=(-410,-30))
 G.add_node("Puerto Plata", pos=(-430,-50))
 G.add_node("La Romana", pos=(-460,-70))
 
@@ -688,6 +619,18 @@ G.add_edge("Ámsterdam","Bucarest",weight=)
 G.add_edge("Múnich","Bogotá",weight=)
 G.add_edge("Múnich","Bucarest",weight=)
 G.add_edge("Barcelona","Bucarest",weight=)
+
+
+######ARISTAS QUE NO ESTAN EN EL GIT
+G.add_edge("Bogotá","Quito",weight=)
+G.add_edge("Ciudad de Panamá","Quito",weight=)
+G.add_edge("Ámsterdam","Cracovia",weight=)
+G.add_edge("Quito","Ámsterdam",weight=)
+G.add_edge("Quito","Paris",weight=)
+
+
+
+
 
 #weight = nx.get_edge_attributes(G, 'weight')
 pos = nx.get_node_attributes(G, 'pos')
