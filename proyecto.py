@@ -19,8 +19,8 @@ Italia = ["Roma","Milán","Venecia"]
 
 #Francia
 G.add_node("Paris", pos=(150,60))#YA
-G.add_node("Montpellier", pos=(170,60))
-G.add_node("Versalles", pos=(190,80))
+G.add_node("Montpellier", pos=(170,60))#YA
+G.add_node("Versalles", pos=(190,80))#YA
 
 Francia = ["Paris","Montpellier","Versalles"]
 
@@ -34,8 +34,8 @@ España = ["Madrid", "Barcelona", "Valencia"]
 
 
 #Alemania
-G.add_node("Berlín", pos=(170, 80))
-G.add_node("Hamburgo", pos=(165, 90))
+G.add_node("Berlín", pos=(170, 80))#YA
+G.add_node("Hamburgo", pos=(165, 90))#YA
 G.add_node("Fráncfort", pos=(150, 100))#YA
 G.add_node("Zúrich",pos=(170,70))#YA
 G.add_node("Múnich",pos=(190,80))#YA
@@ -44,47 +44,43 @@ Alemania = ["Zúrich","Berlín", "Hamburgo", "Fráncfort"]
 
 
 #Polonia
-G.add_node("Torun", pos=(190,130))
-G.add_node("Cracovia", pos=(130,150))
-G.add_node("Varsovia", pos=(150,140))
+G.add_node("Torun", pos=(190,130))#YA
+G.add_node("Cracovia", pos=(130,150))#YA
+G.add_node("Varsovia", pos=(150,140))#YA
 
 Polonia = ["Torun", "Cracovia", "Varsovia"]
 
 
 #Inglaterra
 G.add_node("Londres", pos=(100,500))#YA
-G.add_node("Mánchester", pos=(115,480))
-G.add_node("Oxford", pos=(130,490))
+G.add_node("Mánchester", pos=(115,480))#YA
+G.add_node("Birmingham", pos=(130,490))#YA
 
-Inglaterra = ["Londres", "Mánchester", "Oxford"]
+Inglaterra = ["Londres", "Mánchester", "Birmingham"]
 
 
 #Irlanda
-G.add_node("Dublín", pos=(150,300))
-G.add_node("Cork", pos=(120,250))
-G.add_node("Kilkenny", pos=(140,320))
+G.add_node("Dublín", pos=(150,300))#YA
+G.add_node("Cork", pos=(120,250))#YA
 
-Irlanda = ["Dublín", "Cork", "Kilkenny"]
+Irlanda = ["Dublín", "Cork"]
 
 
 #Portugal
-G.add_node("Lisboa", pos=(70,130))
-G.add_node("Braga", pos=(90,140))
-G.add_node("Lagos", pos=(80,150))
+G.add_node("Lisboa", pos=(70,130))#YA
+G.add_node("Braga", pos=(90,140))#YA
 
-Portugal = ["Lisboa", "Braga", "Lagos"]
+Portugal = ["Lisboa", "Braga"]
 
 
 #Grecia
-G.add_node("Atenas", pos=(160,210))
-G.add_node("Olimpia", pos=(140,240))
-G.add_node("Corinto", pos=(130,250))
+G.add_node("Atenas", pos=(160,210))#YA
 
-Grecia = ["Atenas", "Olimpia", "Corinto"]
+Grecia = ["Atenas"]
 
 
 #Rumanía
-G.add_node("Bucarest", pos=(130,50))
+G.add_node("Bucarest", pos=(130,50))#YA
 G.add_node("Sibiu", pos=(150,70))
 G.add_node("Constanza", pos=(140,60))
 
@@ -627,6 +623,42 @@ G.add_edge("Ciudad de Panamá","Quito",weight=)
 G.add_edge("Ámsterdam","Cracovia",weight=)
 G.add_edge("Quito","Ámsterdam",weight=)
 G.add_edge("Quito","Paris",weight=)
+G.add_edge("Madrid","Hamburgo",weight=)
+G.add_edge("Múnich","Hamburgo",weight=)
+G.add_edge("Fráncfort","Hamburgo",weight=)
+G.add_edge("Atlanta","Paris",weight=)
+G.add_edge("Paris","Hamburgo",weight=)
+G.add_edge("Hamburgo","Torun",weight=)
+G.add_edge("Torun","Estambul",weight=)
+G.add_edge("Estambul","Bogotá",weight=)
+G.add_edge("Paris","Mánchester",weight=)
+G.add_edge("Toronto","Dublín",weight=)
+G.add_edge("Dublín","Mánchester",weight=)
+G.add_edge("Ámsterdam","Birmingham",weight=)
+G.add_edge("Fráncfort","Birmingham",weight=)
+G.add_edge("Múnich","Birmingham",weight=)
+G.add_edge("Estambul","Birmingham",weight=)
+G.add_edge("Birmingham","Ámsterdam",weight=)
+G.add_edge("Ámsterdam","Cork",weight=)
+G.add_edge("Ciudad de Panamá","Ámsterdam",weight=)
+G.add_edge("Paris","Ámsterdam",weight=)
+G.add_edge("Londres","Cork",weight=)
+G.add_edge("Lisboa","Madrid",weight=)
+G.add_edge("Toronto","Viena",weight=)
+G.add_edge("Viena","Lisboa",weight=)
+G.add_edge("New York","Lisboa",weight=)
+G.add_edge("Madrid","Braga",weight=)
+G.add_edge("Estambul","Braga",weight=)
+G.add_edge("Braga","Fráncfort",weight=)
+G.add_edge("Fráncfort","Shanghái",weight=)
+G.add_edge("Ámsterdam","Atenas",weight=)
+G.add_edge("Ciudad de Panamá","Estambul",weight=)
+G.add_edge("Estambul","Atenas",weight=)
+G.add_edge("Paris","Atenas",weight=)
+G.add_edge("Fráncfort","Atenas",weight=)
+G.add_edge("Múnich","Sibiu",weight=)
+G.add_edge("Miami","Múnich",weight=)
+
 
 
 
