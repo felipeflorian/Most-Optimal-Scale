@@ -140,7 +140,7 @@ Sudán = ["Jartum"]
 
 
 #Nigeria
-G.add_node("Abuya", pos=(170,-30))
+G.add_node("Abuya", pos=(170,-30))#YA
 
 Nigeria = ["Abuya"]
 
@@ -223,8 +223,8 @@ ArabiaSaudita = ["Meca", "Riad", "Abha"]
 
 
 #Emiratos Árabes Unidos
-G.add_node("Dubái", pos=(210,80))
-G.add_node("Abu Dabi", pos=(230,100))
+G.add_node("Dubái", pos=(210,80))#YA
+G.add_node("Abu Dabi", pos=(230,100))#YA
 G.add_node("Ajman", pos=(210,50))
 
 EmiratosÁrabesUnidos = ["Dubái", "Abu Dabi", "Ajman"]
@@ -324,7 +324,7 @@ Oceanía = [Tasmania, Australia, Nueva Zelanda]
 #Colombia
 G.add_node("Bogotá", pos=(-100, -100))#YA
 G.add_node("Medellin", pos=(-60,-40))#YA
-G.add_node("Cartagena", pos=(60, -70))
+G.add_node("Cartagena", pos=(60, -70))#YA
 
 
 #Ecuador
@@ -333,17 +333,17 @@ G.add_node("Cuenca", pos=(-230,-70))
 G.add_node("Guayaquil", pos=(-250,-90))
 
 #Perú
-G.add_node("Lima", pos=(-20, -100))
+G.add_node("Lima", pos=(-20, -100))#YA
 G.add_node("Cusco", pos=(-50,-130))
 G.add_node("Iquitos", pos=(-70,-170))
 
 #Brasil
-G.add_node("Río de Janeiro", pos=(5, -100))
+G.add_node("Río de Janeiro", pos=(5, -100))#YA
 G.add_node("Brasilia", pos=(30,-120))
-G.add_node("São Pablo", pos=(50,-90))
+G.add_node("São Pablo", pos=(50,-90))#YA
 
 #Chile
-G.add_node("Santiago de Chile", pos=(-140,-80))
+G.add_node("Santiago de Chile", pos=(-140,-80))#YA
 G.add_node("Valparaíso", pos=(-160,-50))
 G.add_node("Concepción", pos=(-180,-100))
 
@@ -374,8 +374,8 @@ SurÁmerica = [Colombia,  Ecuador, Perú, Brasil, Chile, Argentina, Uruguay, Par
 #NORTE ÁMERICA---------------------------------------------------------------------------
 
 #Estados Unidos
-G.add_node("Houston", pos=(-80, 85))
-G.add_node("Dallas", pos=(-90,100))
+G.add_node("Houston", pos=(-80, 85))#YA
+G.add_node("Dallas", pos=(-90,100))#YA
 G.add_node("Nueva Orleans", pos=(-100,110))
 G.add_node("Seattle", pos=(-110,120))
 G.add_node("Portland", pos=(-120,130))
@@ -392,7 +392,7 @@ G.add_node("Orlando", pos=(-220, 230))
 G.add_node("Tampa", pos=(-230,240))
 G.add_node("Miami", pos=(-240,250 ))#YA
 G.add_node("Charlotte", pos=(-200,200))
-G.add_node("Washington DC", pos=(-180,190))
+G.add_node("Washington", pos=(-180,190))#YA
 G.add_node("Nueva York", pos=(-170,80))#YA
 G.add_node("Portland", pos=(-190,90))
 G.add_node("Nashville", pos=(-140,100))
