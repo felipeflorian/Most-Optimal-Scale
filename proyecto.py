@@ -199,7 +199,7 @@ G.add_node("Hong Kong",pos=(240,60))#YA
 China = ["Pekín", "Shanghái", "Shenzhen"]
 
 #Kazajistán
-G.add_node("Astaná", pos=(200,310))
+G.add_node("Astaná", pos=(200,310))#YA
 G.add_node("Shymkent", pos=(220,300))
 G.add_node("Pavlodar", pos=(210,280))
 
@@ -393,7 +393,7 @@ G.add_node("Tampa", pos=(-230,240))
 G.add_node("Miami", pos=(-240,250 ))#YA
 G.add_node("Charlotte", pos=(-200,200))
 G.add_node("Washington", pos=(-180,190))#YA
-G.add_node("Nueva York", pos=(-170,80))#YA
+G.add_node("New York", pos=(-170,80))#YA
 G.add_node("Portland", pos=(-190,90))
 G.add_node("Nashville", pos=(-140,100))
 G.add_node("Indianápolis", pos=(-180,30))
