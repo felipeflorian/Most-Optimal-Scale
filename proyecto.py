@@ -377,14 +377,14 @@ G.add_node("Ottawa", pos=(-60,110))#YA#YA
 
 
 
-NorteÁmerica = [EstadosUnidos, Panamá, CostaRica,Cuba,México, Canadá]
+NorteÁmerica = [EstadosUnidos, Panamá, CostaRica, Cuba, México, Canadá]
 
 
 #-----------------------------------------------------ARISTAS---------------------------------------------------------------------------
 G.add_edge("Bogotá","Cartagena", weight = 1.21 )
 G.add_edge("Bogotá","Medellin", weight = 0.45)
-G.add_edge("Bogotá","Miami", weight = 3.17)
-G.add_edge("Bogotá", "Ciudad de Panamá", weight = )
+G.add_edge("Bogotá","Miami", weight = 3.45)
+G.add_edge("Bogotá", "Ciudad de Panamá", weight = 1.45)
 G.add_edge("Ciudad de Panamá", "La Habana", weight = ) #Cuba
 G.add_edge("Ciudad de Panamá", "Valencia", weight = ) #Venezuela
 G.add_edge("Bogotá","Atlanta",weight=)
@@ -598,7 +598,7 @@ G.add_edge("Paris","Riad",weight=)
 G.add_edge("Riad","Abha",weight=)
 G.add_edge("El cairo","Abha",weight=)
 G.add_edge("Ciudad de México","Tokio",weight=)
-G.add_edge("Bogotá","Ciudad de México",weight=)
+G.add_edge("Bogotá","Ciudad de México",weight=5)
 G.add_edge("Tokio","Yakarta",weight=)
 G.add_edge("Los Ángeles","Hong Kong",weight=)
 G.add_edge("Hong Kong","Surabaya",weight=)
