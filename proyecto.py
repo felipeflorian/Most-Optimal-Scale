@@ -291,7 +291,7 @@ G.add_node("Auckland", pos=(550,110))#YA
 NuevaZelanda = ["Wellington", "Auckland"]
 
 
-Oceanía = [Tasmania, Australia, Nueva Zelanda]
+Oceanía = [ Australia, Nueva Zelanda]
 
 
 #SUR AMÉRICA---------------------------------------------------------------------------
@@ -301,11 +301,15 @@ G.add_node("Bogotá", pos=(-100, -100))#YA
 G.add_node("Medellin", pos=(-60,-40))#YA
 G.add_node("Cartagena", pos=(60, -70))#YA
 
+Colombia = ["Bogotá,"Medellin", "Cartagena"]
 
 #Ecuador
 G.add_node("Quito", pos=(-200,-50))#YA
 G.add_node("Guayaquil", pos=(-250,-90))#YA
 
+            
+Ecuador = ["Quito","Guayaquil"]            
+            
 #Perú
 G.add_node("Lima", pos=(-20, -100))#YA
 G.add_node("Cusco", pos=(-50,-130))#YA
@@ -326,7 +330,7 @@ G.add_node("La Plata", pos=(-160,-200))#YA
 G.add_node("Montevideo", pos=(-130,-100))#YA
 G.add_node("Punta del Este", pos=(-110,-70))#YA
 
-
+https://e-aulas.urosario.edu.co/
 
 SurÁmerica = [Colombia,  Ecuador, Perú, Brasil, Chile, Argentina, Uruguay]
 
