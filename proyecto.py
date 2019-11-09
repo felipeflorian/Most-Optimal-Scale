@@ -40,7 +40,7 @@ G.add_node("Fráncfort", pos=(150, 100))#YA
 G.add_node("Zúrich",pos=(170,70))#YA
 G.add_node("Múnich",pos=(190,80))#YA
 
-Alemania = ["Zúrich","Berlín", "Hamburgo", "Fráncfort"]
+Alemania = ["Zúrich","Berlín", "Hamburgo", "Fráncfort","Múnich"]
 
 
 #Polonia
@@ -196,7 +196,7 @@ G.add_node("Shanghái", pos=(230,40))#YA
 G.add_node("Shenzhen", pos=(220,50))#YA
 G.add_node("Hong Kong",pos=(240,60))#YA
 
-China = ["Pekín", "Shanghái", "Shenzhen"]
+China = ["Pekín", "Shanghái", "Shenzhen", "Hong Kong"]
 
 #Kazajistán
 G.add_node("Astaná", pos=(200,310))#YA
@@ -290,9 +290,13 @@ G.add_node("Auckland", pos=(550,110))#YA
 
 NuevaZelanda = ["Wellington", "Auckland"]
 
+#Samoa
+G.add_node("Apia",pos=(600,150))
 
-Oceanía = [Australia, NuevaZelanda]
-Oceanía1 = ["Australia", "Nueva Zelanda"]
+Samoa = ["Apia"]
+
+Oceanía = [Australia, NuevaZelanda, Samoa]
+Oceanía1 = ["Australia", "Nueva Zelanda", "Samoa"]
 
 #SUR AMÉRICA---------------------------------------------------------------------------
 
@@ -317,10 +321,10 @@ Perú = ["Lima","Cusco"]
 
 #Brasil
 G.add_node("Río de Janeiro", pos=(5, -100))#YA
-G.add_node("Sao Pablo", pos=(50,-90))#YA
+G.add_node("Sao Paulo", pos=(50,-90))#YA
 
 
-Brasil = ["Río de Janeiro","Sao Pablo"]
+Brasil = ["Río de Janeiro","Sao Paulo"]
 
 #Chile
 G.add_node("Santiago", pos=(-140,-80))#YA
@@ -359,8 +363,9 @@ G.add_node("Miami", pos=(-240,250 ))#YA
 G.add_node("Washington", pos=(-180,190))#YA
 G.add_node("New York", pos=(-170,80))#YA
 G.add_node("Chicago", pos=(-210,80))#YA
+G.add_node("Honolulu",pos = (-250,100))
 
-EstadosUnidos = ["Houston","Dallas","Nueva Orleans","Seattle","San Francisco","Las Vegas","Los Ángeles","Atlanta","Orlando","Miami","Washington","New York","Chicago"]
+EstadosUnidos = ["Houston","Dallas","Nueva Orleans","Seattle","San Francisco","Las Vegas","Los Ángeles","Atlanta","Orlando","Miami","Washington","New York","Chicago","Honolulu"]
 
 #Panamá
 G.add_node("Ciudad de Panamá", pos=(0, -70))#YA
@@ -401,163 +406,103 @@ NorteÁmerica = [EstadosUnidos, Panamá, CostaRica, Cuba, México, Canadá]
 NorteÁmerica1 =["Estados Unidos", "Panamá", "Costa Rica", "Cuba", "México", "Canadá"]
 
 
-#G.add_edge("Helsinki","Hong Kong",weight=)##########
 G.add_edge("Helsinki","Moscú",weight=1.45)
 G.add_edge("Moscú","Astana",weight=3.20)
 G.add_edge("Astana","Pekín",weight=5.15)
 G.add_edge("Pekín","Hong Kong",weight=3.45)
 
-#G.add_edge("Ciudad de Panamá","Montreal",weight=)###########
 G.add_edge("Ciudad de Panamá","Miami",weight=5.35)
 G.add_edge("Miami","Montreal",weight=3.21)
 
-#G.add_edge("Varsovia","Kazán",weight=)#################
 G.add_edge("Varsovia","Moscú",weight=2.00)
 G.add_edge("Moscú","Kazán",weight=1.40)
 
-
-#G.add_edge("New York","Milán",weight=) ####7.35
-#G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Milán",weight=2.40)
 
-
-#G.add_edge("New York","Zúrich",weight=) ####8.22
-#G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Zúrich",weight=2.45)
 
-#G.add_edge("Bogotá","Madrid",weight=) ####10.30
 G.add_edge("Bogotá","New York",weight=5.45)#IMPORTANTE
-#G.add_edge("New York","Lisboa",weight=6.45)
+
 G.add_edge("Lisboa","Madrid",weight=1.20)
 
-#G.add_edge("Madrid","Medellin",weight=)####9.30
 
-#G.add_edge("Bogotá","Fráncfort",weight=)####11.48
-#G.add_edge("Bogotá","New York",weight=5.45)
-#G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Fráncfort",weight=3.05)
 
-#G.add_edge("New York","Estambul",weight=)######10.32
-#G.add_edge("New York","Lisboa",weight=6.45)
+
+G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Estambul",weight=4.50)
 
-#G.add_edge("Bogotá","Los Ángeles",weight=)####7.42
+
 G.add_edge("Bogotá","Cancún",weight=3.20)
 G.add_edge("Cancún","Los Ángeles",weight=4.45)
 
-#G.add_edge("Bogotá","Múnich",weight=)####11.04
-#G.add_edge("Bogotá","New York",weight=5.45)
-#G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Múnich",weight=3.05)
 
-#G.add_edge("Ciudad de Panamá","Madrid",weight=)####10.39
+
 G.add_edge("Ciudad de Panamá","New York",weight=5.15)
-#G.add_edge("New York","Lisboa",weight=6.45)
+
 G.add_edge("Lisboa","Madrid",weight=1.09)
 
-#G.add_edge("Bogotá","Abu Dabi",weight=)####
-#G.add_edge("Bogotá","New York",weight=5.45)
-#G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Estambul",weight=4.31)
 G.add_edge("Estambul","Abu Dabi",weight=4.16)
 
-#G.add_edge("Chicago","Versalles",weight=)####7.50
 G.add_edge("Chicago","New York",weight=2.09)
 G.add_edge("New York","Versalles",weight=6.50)
 
-#G.add_edge("Santo Domingo","París",weight=)####9.27
 G.add_edge("Santo Domingo","Nueva York",weight=4.07)
 G.add_edge("Nueva York","París",weight=6.50)
 
-#G.add_edge("Toronto","Zúrich",weight=)####8.36
-G.add_edge("Toronto","Lisboa",weight=7.00)
+G.add_edge("Toronto","Lisboa",weight=7.00)#IMPORTANTE
 G.add_edge("Lisboa","Zúrich",weight=2.39)
 
-#G.add_edge("New York","Moscú",weight=)####10.15
-#G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Moscú",weight=5.23)
 
-#G.add_edge("Washington","Estambul",weight=)####10.59
 G.add_edge("Washington","Toronto",weight=1.14)
-#G.add_edge("Toronto","Lisboa",weight=7.00)
 G.add_edge("Lisboa","Estambul",weight=4.31)
 
-#G.add_edge("Tokio","Yakarta",weight=)####7.41
 G.add_edge("Tokio","Manila",weight=5.00)
 G.add_edge("Manila","Yakarta",weight=5.20)
 
-#G.add_edge("Hong Kong","Perth",weight=)####7.58
 G.add_edge("Perth","Yakarta",weight=4.16)
 G.add_edge("Yakarta","Hong Kong",weight=4.32)
 
+G.add_edge("Atlanta","New York",weight=2.08)####8.20
+G.add_edge("Lisboa","París",weight=2.20)
+
+G.add_edge("Londres","Estambul",weight=3.38)####8.30
+G.add_edge("Estambul","Nueva Delhi",weight=5.55)####8.30
+
+G.add_edge("Miami","New York",weight=2.51)
+G.add_edge("Lisboa","Múnich",weight=2.59)####9.21
+
+G.add_edge("Toronto","Lisboa",weight=7.00)
+G.add_edge("Lisboa","Viena",weight=3.23)
+
+G.add_edge("Bogotá","New York",weight=5.45)#IMPORTANTE
+
+G.add_edge("Lisboa","Estambul",weight=4.31)
 
 
+G.add_edge("Miami","New York",weight=2.51)
+G.add_edge("New York","Londres",weight=6.40)#IMPORTANTE
 
+G.add_edge("Ciudad de Panamá","New York",weight=5.15)
+G.add_edge("Londres","Ámsterdam",weight=0.58)
 
+G.add_edge("Fráncfort","Astana",weight=5.35)####8.41
+G.add_edge("Astana","Taskent",weight=2.10)
+G.add_edge("Astana","Nueva Delhi",weight=6.40)
+G.add_edge("Nueva Delhi","Bombay",weight=2.10)
 
+G.add_edge("Fráncfort","Astaná",weight=5.35)
+G.add_edge("Astaná","Pekín",weight=5.15)
+G.add_edge("Madrid","Estambul",weight=3.56)
+G.add_edge("Estambul","Nueva Delhi",weight=5.55)
+G.add_edge("Nueva Delhi","Bangkok",weight=3.55)
+G.add_edge("Bangkok","Shanghái",weight=4.06)
+G.add_edge("Ámsterdam","Fráncfort",weight=0.58)####9.02
 
-#########################################################################################
-# G.add_edge("New York","Hong Kong",weight=)####15.30
-#
-# G.add_edge("Fráncfort","Bangkok",weight=)####11.42
-# G.add_edge("Dallas","Seúl",weight=)####14.11
-# G.add_edge("Los Ángeles","Seúl",weight=)####12.30
-# G.add_edge("Dallas","Tokio",weight=)####13.22
-# G.add_edge("Vancouver","Tokio",weight=)####9.51
-# G.add_edge("Dallas","Daejeon",weight=)####14.40
-# G.add_edge("Los Ángeles","Daejeon",weight=)####13.20
-# G.add_edge("New York","Tokio",weight=)####14.00
-# G.add_edge("Dallas","Kaesong",weight=)####14.40
-# G.add_edge("Atlanta","Kaesong",weight=)####14.55
-# G.add_edge("Dallas","Haeju",weight=)####14.40
-# G.add_edge("San Francisco","Tokio",weight=)####11.20
-# G.add_edge("Washington","Tokio",weight=)####14.01
-# G.add_edge("Toronto","Hong Kong",weight=)####16.08
-#
-# G.add_edge("Santiago","Auckland",weight=)####12.32
-# G.add_edge("Guayaquil","Ámsterdam",weight=)####12.44
-# G.add_edge("Los Ángeles","Auckland",weight=)###13.31
-# G.add_edge("Los Ángeles","Sídney",weight=)####15.29
-# G.add_edge("Miami","Londres",weight=)####9.21
-# G.add_edge("Múnich","Bogotá",weight=)####12.19
-# G.add_edge("Quito","Ámsterdam",weight=)####
-# G.add_edge("Quito","París",weight=)####10.55
-# G.add_edge("Atlanta","París",weight=)####8.20
-# G.add_edge("Estambul","Bogotá",weight=)####
-# G.add_edge("Ciudad de Panamá","Ámsterdam",weight=)####11.28
-# G.add_edge("Fráncfort","Shanghái",weight=)####11.33
-# G.add_edge("Ciudad de Panamá","Estambul",weight=)####
-# G.add_edge("Miami","Múnich",weight=)####9.21
-# G.add_edge("París","Argel",weight=)####
-# G.add_edge("Washington","Estambul",weight=)####10.59
-# G.add_edge("París","Luanda",weight=)####8.35
-# G.add_edge("Fráncfort","Johannesburgo",weight=)####11.16
-#
-# G.add_edge("Sao Paulo","Johannesburgo",weight=)####8.45
-# G.add_edge("Fráncfort","Bombay",weight=)####8.41
-# G.add_edge("Ámsterdam","Bombay",weight=)####9.02
-# G.add_edge("Fráncfort","Nueva Delhi",weight=)####7.35
-# G.add_edge("Londres","Nueva Delhi",weight=)####8.30
-# G.add_edge("Toronto","Viena",weight=)####9.10
-#
-# G.add_edge("San Francisco","Pekín",weight=)####12.20
-# G.add_edge("Dallas","Pekín",weight=)####14.20
-# G.add_edge("Chicago","Shanghái",weight=)####14.37
-# G.add_edge("Fráncfort","Pekín",weight=)####10.13
-# G.add_edge("Madrid","Shanghái",weight=)####12.55
-# G.add_edge("Vancouver","Melbourne",weight=)####################16.20
-# #FALTA
-#
-# G.add_edge("Los Ángeles","Auckland",weight=)#################13.31
-# #FALTA
-#
-# G.add_edge("Abu Dabi","Melbourne",weight=)####14.59
-# G.add_edge("Cartagena","Ámsterdam",weight=)#####9.35
-# G.add_edge("Ciudad de México","Tokio",weight=)####
-# G.add_edge("Los Ángeles","Hong Kong",weight=)####15.02
-# ########################################################################################
-#
-
+########################################################################################
 
 
 
@@ -776,8 +721,13 @@ G.add_edge("Toronto","Ottawa",weight=0.58)
 G.add_edge("Ottawa","Winnipeg",weight=2.37)
 G.add_edge("Bogotá","Cartago",weight=2.15)
 G.add_edge("Ciudad de Panamá","Liberia",weight=1.22)
+G.add_edge("Seúl","Tokio",weight=2.30)
+
+
 
 def Escala():
+    node_color = ['#7B241C', '#3333FF', '#34495E', '#FF3333', '#6C3483','#0E6655','#9C640C','#5F6A6A','#17202A','#D4AC0D','#C39BD3','#58D68D','#5D6D7E','#D98880','#5499C7','#24DB11']
+    color = []
     pos = nx.get_node_attributes(G, 'pos')
     weight = nx.get_edge_attributes(G, 'weight')
     Edges = G.edges()
@@ -786,31 +736,32 @@ def Escala():
     c = [Europa, Asia, Africa, SurÁmerica, NorteÁmerica, Oceanía]
     c1 = ["Europa","Asia", "Africa","Sur Ámerica","Norte Ámerica","Oceanía"]
     for i in range(len(c1)):
-        print(i, ". Para ", c1[i])
+        print(i, ".Para ", c1[i])
 
     print("\n"*2)
 
     cont = int(input("Continente salida: "))
+    print("\n")
     cont1 = int(input("Continente llegada: "))
     print("\n"*2)
     print("Países de salida: ")
-
+    print("\n")
     if cont == 0:
         for i in range(len(Europa1)):
-             print(i, ". Para ", Europa1[i])
+             print(i, ".Para ", Europa1[i])
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = Europa[u]
         for i in range(len(pais)):
-            print(i,". Para ", pais[i])
+            print(i,".Para ", pais[i])
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-        print(x)
+
 
 
     if cont == 1:
         for i in range(len(Asia1)):
-             print(i, ". Para ", Asia1[i])
+             print(i, ".Para ", Asia1[i])
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = Asia[u]
@@ -818,187 +769,150 @@ def Escala():
             print(i,". Para ", pais[i])
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-        print(x)
+
 
 
     if cont == 2:
         for i in range(len(Africa1)):
-             print(i, ". Para ", Africa1[i])
+             print(i, ".Para ", Africa1[i])
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = Africa[u]
         for i in range(len(pais)):
-            print(i,". Para ", pais[i])
+            print(i,".Para ", pais[i])
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-        print(x)
+
 
     if cont == 3:
         for i in range(len(SurÁmerica1)):
-             print(i, ". Para ", SurÁmerica1[i])
+             print(i, ".Para ", SurÁmerica1[i])
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = SurÁmerica[u]
         for i in range(len(pais)):
-            print(i,". Para ", pais[i])
+            print(i,".Para ", pais[i])
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-        print(x)
+
 
     if cont == 4:
         for i in range(len(NorteÁmerica1)):
-             print(i, ". Para ", NorteÁmerica1[i])
+             print(i, ".Para ", NorteÁmerica1[i])
         u = int(input("Ingrese el país de salida: "))
         pais = NorteÁmerica[u]
         print("\n")
         for i in range(len(pais)):
-            print(i,". Para ", pais[i])
+            print(i,".Para ", pais[i])
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-        print(x)
+
 
     if cont == 5:
         for i in range(len(Oceanía1)):
-             print(i, ". Para ", Oceanía1[i])
+             print(i, ".Para ", Oceanía1[i])
         u = int(input("Ingrese el país de salida: "))
         pais = Oceanía[u]
         print("\n")
         for i in range(len(pais)):
-            print(i,". Para ", pais[i])
+            print(i,".Para ", pais[i])
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-        print(x)
+
 
     ######################
     if cont1 == 0:
         for i in range(len(Europa1)):
-             print(i, ". Para ", Europa1[i])
+             print(i, ".Para ", Europa1[i])
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Europa[v]
         print("\n")
         for i in range(len(pais2)):
-            print(i,". Para ", pais2[i])
+            print(i,".Para ", pais2[i])
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
-        print(y)
+
 
     if cont1 == 1:
         for i in range(len(Asia1)):
-             print(i, ". Para ", Asia1[i])
+             print(i, ".Para ", Asia1[i])
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Asia[v]
         print("\n")
         for i in range(len(pais2)):
-            print(i,". Para ", pais2[i])
+            print(i,".Para ", pais2[i])
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
-        print(y)
+
 
     if cont1 == 2:
         for i in range(len(Africa1)):
-             print(i, ". Para ", Africa1[i])
+             print(i, ".Para ", Africa1[i])
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Africa[v]
         print("\n")
         for i in range(len(pais2)):
-            print(i,". Para ", pais2[i])
+            print(i,".Para ", pais2[i])
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
-        print(y)
+
 
     if cont1 == 3:
         for i in range(len(SurÁmerica1)):
-             print(i, ". Para ", SurÁmerica1[i])
+             print(i, ".Para ", SurÁmerica1[i])
         v = int(input("Ingrese el pais de destino: "))
         pais2 = SurÁmerica[v]
         print("\n")
         for i in range(len(pais2)):
-            print(i,". Para ", pais2[i])
+            print(i,".Para ", pais2[i])
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
-        print(y)
+
 
     if cont1 == 4:
         for i in range(len(NorteÁmerica1)):
-             print(i, ". Para ", NorteÁmerica1[i])
+             print(i, ".Para ", NorteÁmerica1[i])
         v = int(input("Ingrese el pais de destino: "))
         pais2 = NorteÁmerica[v]
         print("\n")
         for i in range(len(pais2)):
-            print(i,". Para ", pais2[i])
+            print(i,".Para ", pais2[i])
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
-        print(y)
+
 
     if cont1 == 5:
         for i in range(len(Oceanía1)):
-             print(i, ". Para ", Oceanía1[i])
+             print(i, ".Para ", Oceanía1[i])
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Oceanía[v]
         print("\n")
         for i in range(len(pais2)):
-            print(i,". Para ", pais2[i])
+            print(i,".Para ", pais2[i])
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
-        print(y)
+
 
 
 
     H = nx.Graph()
 
     if (x,y) in Edges and (x,y) in weight.keys():
-        print("entrando al primer if")
         f = x,y
         z = weight.get(f)
         if z <= 5:
             time = weight.get((x,y))
-            print(time)
             H.add_node(x, pos =(10,10))
             H.add_node(y, pos =(15,10))
             H.add_edge(x,y,weight=time)
             pos1 = nx.get_node_attributes(H, 'pos')
             weight1 = nx.get_edge_attributes(H,'weight')
             plt.figure()
-            nx.draw_networkx(H,pos1)
+            nx.draw_networkx(H,pos1, node_list = [x,y], node_color = [node_color[0],node_color[1]])
             nx.draw_networkx_edge_labels(H,pos1,edge_labels = weight1)
 
             plt.show()
         else:
-            print("entrando al primer else")
-            for i in pos:
-                H.add_node(i, pos = pos.get(i))
-            for (a,b) in weight.keys():
-                if (a,b) != (x,y) or (a,b) != (y,x):
-                    j = a,b
-                    H.add_edge(a,b, weight = weight.get(j))
-            print((x,y) in H.edges())
-            print((y,x) in H.edges())
-            #print(H.edges())
-            #print(H.nodes())
-
-    if (y,x) in Edges and (y,x) in weight.keys():
-        print("entrando al segundo if")
-        f = y,x
-        z = weight.get(f)
-        print(type(z))
-        if z <= 5:
-            time = weight.get((y,x))
-            print(time)
-            H.add_node(x, pos =(10,10))
-            H.add_node(y, pos =(15,10))
-            H.add_edge(x,y,weight=time)
-            print(H.nodes())
-            pos1 = nx.get_node_attributes(H, 'pos')
-            weight1 = nx.get_edge_attributes(H,'weight')
-            print(pos1)
-            print(weight1)
-            print(H.edges())
-            plt.figure()
-            nx.draw_networkx(H,pos1)
-            nx.draw_networkx_edge_labels(H,pos1,edge_labels = weight1)
-            plt.show()
-        else:
-            print("entrando al segundo else")
             for i in pos:
                 H.add_node(i, pos = pos.get(i))
 
@@ -1009,8 +923,6 @@ def Escala():
 
             pos1 = nx.get_node_attributes(H, 'pos')
             weight1 = nx.get_edge_attributes(H,'weight')
-            print(pos1)
-            print(weight1)
             path = nx.dijkstra_path(H,x,y)
             P = nx.Graph()
             x = 0
@@ -1020,12 +932,8 @@ def Escala():
                 x += 20
             for i in range(len(path)):
                 if i+1 < len(path):
-                    print(i)
-                    print(i+1)
                     u = path[i]
                     v = path[i+1]
-                    print(u)
-                    print(v)
                     if (u,v) in weight1.keys():
                         P.add_edge(u,v,weight = weight1.get((u,v)))
 
@@ -1033,15 +941,83 @@ def Escala():
                         P.add_edge(u,v,weight = weight1.get((v,u)))
 
 
+            n = P.nodes()
+            nodesP = []
+            for u in n:
+                nodesP.append(u)
+            for v in range(len(nodesP)):
+                color.append(node_color[v])
 
-            print(P.nodes())
-            print(P.edges())
             pos2 = nx.get_node_attributes(P, 'pos')
             weight2 = nx.get_edge_attributes(P,'weight')
             plt.figure()
-            nx.draw_networkx(P,pos2)
+            nx.draw_networkx(P,pos2,nodelist=nodesP,node_color= color)
             nx.draw_networkx_edge_labels(P,pos2,edge_labels = weight2)
             plt.show()
+
+
+
+    if (y,x) in Edges and (y,x) in weight.keys():
+        f = y,x
+        z = weight.get(f)
+
+        if z <= 5:
+            time = weight.get((y,x))
+            print(time)
+            H.add_node(x, pos =(10,10))
+            H.add_node(y, pos =(15,10))
+            H.add_edge(x,y,weight=time)
+            pos1 = nx.get_node_attributes(H, 'pos')
+            weight1 = nx.get_edge_attributes(H,'weight')
+            plt.figure()
+            nx.draw_networkx(H,pos1,node_list = [x,y], node_color = [node_color[0],node_color[1]])
+            nx.draw_networkx_edge_labels(H,pos1,edge_labels = weight1)
+            plt.show()
+        else:
+            for i in pos:
+                H.add_node(i, pos = pos.get(i))
+
+            for (a,b) in weight.keys():
+                if (a,b) != (x,y) or (a,b) != (y,x):
+                    j = a,b
+                    H.add_edge(a,b, weight = weight.get(j))
+
+            pos1 = nx.get_node_attributes(H, 'pos')
+            weight1 = nx.get_edge_attributes(H,'weight')
+            path = nx.dijkstra_path(H,x,y)
+            P = nx.Graph()
+            x = 0
+            y = 0
+            for i in path:
+                P.add_node(i, pos = (x,y))
+                x += 20
+            for i in range(len(path)):
+                if i+1 < len(path):
+                    u = path[i]
+                    v = path[i+1]
+                    if (u,v) in weight1.keys():
+                        P.add_edge(u,v,weight = weight1.get((u,v)))
+
+                    if (v,u) in weight1.keys():
+                        P.add_edge(u,v,weight = weight1.get((v,u)))
+
+            n = P.nodes()
+            nodesP = []
+            for u in n:
+                nodesP.append(u)
+            for v in range(len(nodesP)):
+                color.append(node_color[v])
+
+            pos2 = nx.get_node_attributes(P, 'pos')
+            weight2 = nx.get_edge_attributes(P,'weight')
+            plt.figure()
+            nx.draw_networkx(P,pos2,nodelist=nodesP,node_color= color)
+            nx.draw_networkx_edge_labels(P,pos2,edge_labels = weight2)
+            plt.show()
+
+
+
+
 
     if (x,y) not in Edges or (y,x) not in Edges:
         for i in Nodes:
@@ -1056,17 +1032,19 @@ def Escala():
         P = nx.Graph()
         x = 0
         y = 0
+        z = 300
         for i in path:
             P.add_node(i, pos = (x,y))
-            x += 20
+            x += 200
+            y += z
+
+
+
+
         for i in range(len(path)):
             if i+1 < len(path):
-                print(i)
-                print(i+1)
                 u = path[i]
                 v = path[i+1]
-                #print(u)
-                #print(v)
                 if (u,v) in weight1.keys():
                     P.add_edge(u,v,weight = weight1.get((u,v)))
 
@@ -1074,13 +1052,19 @@ def Escala():
                     P.add_edge(u,v,weight = weight1.get((v,u)))
 
 
+        n = P.nodes()
+        nodesP = []
+        for u in n:
+            nodesP.append(u)
+        for v in range(len(nodesP)):
+            color.append(node_color[v])
 
-        print(P.nodes())
-        print(P.edges())
         pos2 = nx.get_node_attributes(P, 'pos')
         weight2 = nx.get_edge_attributes(P,'weight')
+
         plt.figure()
-        nx.draw_networkx(P,pos2)
+
+        nx.draw_networkx(P,pos2,nodelist=nodesP,node_color= color)
         nx.draw_networkx_edge_labels(P,pos2,edge_labels = weight2)
         plt.show()
 
