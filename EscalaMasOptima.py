@@ -910,7 +910,7 @@ def Escala():
     if (x,y) in Edges and (x,y) in weight.keys():
         f = x,y
         z = weight.get(f)
-        if z <= 5:
+        if z <= 7:
             time = weight.get((x,y))
             H.add_node(x, pos =(10,10))
             H.add_node(y, pos =(15,10))
