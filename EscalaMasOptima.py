@@ -509,8 +509,6 @@ G.add_edge("Toronto","San Francisco",weight=5.44)
 G.add_edge("Ámsterdam","París",weight=1.00)
 G.add_edge("París","Rabat",weight=2.47)
 
-
-#G.add_edge("Rabat","El Cairo",weight=)
 G.add_edge("Rabat","París",weight=2.47)
 G.add_edge("París","El Cairo",weight=4.30)
 G.add_edge("El Cairo","Jartum",weight=2.31)
@@ -538,8 +536,7 @@ G.add_edge("Bogotá","Cartagena", weight = 1.20)
 G.add_edge("Bogotá","Medellin", weight = 0.48)
 G.add_edge("Bogotá","Miami", weight = 3.31)
 G.add_edge("Bogotá", "Ciudad de Panamá", weight = 1.27)
-G.add_edge("Ciudad de Panamá", "La Habana", weight = 2.28) #Cuba
-G.add_edge("Ciudad de Panamá", "Valencia", weight = 2.05) #Venezuela
+G.add_edge("Ciudad de Panamá", "La Habana", weight = 2.28) 
 G.add_edge("Bogotá","Atlanta",weight= 4.42)
 G.add_edge("Atlanta","New York",weight=2.02)
 G.add_edge("Miami","New York",weight=2.41)
