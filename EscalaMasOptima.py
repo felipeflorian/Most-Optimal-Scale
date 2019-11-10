@@ -741,7 +741,7 @@ def Escala():
     Nodes = G.nodes()
     print("Ingrese el continente de salida y de llegada:")
     c = [Europa, Asia, Africa, SurÁmerica, NorteÁmerica, Oceanía]
-    c1 = ["Europa","Asia", "Africa","Sur Ámerica","Norte Ámerica","Oceanía"]
+    c1 = ["Europa","Asia", "Africa","Sur Ámerica","Norte y Centro Ámerica","Oceanía"]
     for i in range(len(c1)):
         print(i, ".Para ", c1[i])
 
