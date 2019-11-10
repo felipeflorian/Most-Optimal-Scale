@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
@@ -163,8 +164,20 @@ G.add_node("Durban", pos=(200,-200))#YA
 
 Sudáfrica = ["Johannesburgo", "Durban"]
 
-Africa1 = ["Marruecos", "Argelia", "Egipto", "Sudán", "Nigeria","Angola", "Botsuana", "Sudáfrica"]
-Africa = [Marruecos, Argelia, Egipto, Sudán, Nigeria, Angola, Botsuana, Sudáfrica]
+
+#Kenia
+G.add_node("Nairobi",pos=(200,-300))
+
+Kenia = ["Nairobi"]
+
+
+#Zimbabue
+G.add_node("Harare",pos=(320,300))
+
+Zimbabue = ["Harare"]
+
+Africa1 = ["Marruecos", "Argelia", "Egipto", "Sudán", "Nigeria","Angola", "Botsuana", "Sudáfrica","Kenia","Zimbabue"]
+Africa = [Marruecos, Argelia, Egipto, Sudán, Nigeria, Angola, Botsuana, Sudáfrica,Kenia,Zimbabue]
 
 #ASIA---------------------------------------------------------------------------
 
@@ -249,9 +262,8 @@ CoreaDelSur = ["Seúl", "Busan", "Daejeon"]
 
 #Corea del Norte
 G.add_node("Kaesong", pos=(450,130))#YA
-G.add_node("Haeju", pos=(480,170))#YA
 
-CoreaDelNorte = ["Kaesong", "Haeju"]
+CoreaDelNorte = ["Kaesong"]
 
 
 #Japon
@@ -406,6 +418,9 @@ NorteÁmerica = [EstadosUnidos, Panamá, CostaRica, Cuba, México, Canadá]
 NorteÁmerica1 =["Estados Unidos", "Panamá", "Costa Rica", "Cuba", "México", "Canadá"]
 
 
+#-----------------------------------------------------ARISTAS---------------------------------------------------------------------------
+
+
 G.add_edge("Helsinki","Moscú",weight=1.45)
 G.add_edge("Moscú","Astana",weight=3.20)
 G.add_edge("Astana","Pekín",weight=5.15)
@@ -416,98 +431,94 @@ G.add_edge("Miami","Montreal",weight=3.21)
 
 G.add_edge("Varsovia","Moscú",weight=2.00)
 G.add_edge("Moscú","Kazán",weight=1.40)
-
 G.add_edge("Lisboa","Milán",weight=2.40)
-
 G.add_edge("Lisboa","Zúrich",weight=2.45)
-
-G.add_edge("Bogotá","New York",weight=5.45)#IMPORTANTE
-
+G.add_edge("Bogotá","New York",weight=5.45)
 G.add_edge("Lisboa","Madrid",weight=1.20)
-
-
 G.add_edge("Lisboa","Fráncfort",weight=3.05)
-
-
-G.add_edge("New York","Lisboa",weight=6.45)
 G.add_edge("Lisboa","Estambul",weight=4.50)
-
-
 G.add_edge("Bogotá","Cancún",weight=3.20)
 G.add_edge("Cancún","Los Ángeles",weight=4.45)
-
 G.add_edge("Lisboa","Múnich",weight=3.05)
-
-
 G.add_edge("Ciudad de Panamá","New York",weight=5.15)
-
 G.add_edge("Lisboa","Madrid",weight=1.09)
-
 G.add_edge("Lisboa","Estambul",weight=4.31)
 G.add_edge("Estambul","Abu Dabi",weight=4.16)
-
 G.add_edge("Chicago","New York",weight=2.09)
 G.add_edge("New York","Versalles",weight=6.50)
-
 G.add_edge("Santo Domingo","Nueva York",weight=4.07)
 G.add_edge("Nueva York","París",weight=6.50)
 
-G.add_edge("Toronto","Lisboa",weight=7.00)#IMPORTANTE
+G.add_edge("Toronto","Lisboa",weight=7.00)
 G.add_edge("Lisboa","Zúrich",weight=2.39)
-
 G.add_edge("Lisboa","Moscú",weight=5.23)
-
 G.add_edge("Washington","Toronto",weight=1.14)
 G.add_edge("Lisboa","Estambul",weight=4.31)
-
 G.add_edge("Tokio","Manila",weight=5.00)
 G.add_edge("Manila","Yakarta",weight=5.20)
-
 G.add_edge("Perth","Yakarta",weight=4.16)
 G.add_edge("Yakarta","Hong Kong",weight=4.32)
-
-G.add_edge("Atlanta","New York",weight=2.08)####8.20
-G.add_edge("Lisboa","París",weight=2.20)
-
-G.add_edge("Londres","Estambul",weight=3.38)####8.30
-G.add_edge("Estambul","Nueva Delhi",weight=5.55)####8.30
-
+G.add_edge("Atlanta","New York",weight=2.08)
+G.add_edge("Lisboa","Paris",weight=2.20)
+G.add_edge("Londres","Estambul",weight=3.38)
+G.add_edge("Estambul","Nueva Delhi",weight=5.55)
 G.add_edge("Miami","New York",weight=2.51)
-G.add_edge("Lisboa","Múnich",weight=2.59)####9.21
-
+G.add_edge("Lisboa","Múnich",weight=2.59)
 G.add_edge("Toronto","Lisboa",weight=7.00)
 G.add_edge("Lisboa","Viena",weight=3.23)
-
-G.add_edge("Bogotá","New York",weight=5.45)#IMPORTANTE
-
-G.add_edge("Lisboa","Estambul",weight=4.31)
-
-
-G.add_edge("Miami","New York",weight=2.51)
-G.add_edge("New York","Londres",weight=6.40)#IMPORTANTE
-
-G.add_edge("Ciudad de Panamá","New York",weight=5.15)
+G.add_edge("New York","Londres",weight=6.40)
 G.add_edge("Londres","Ámsterdam",weight=0.58)
-
-G.add_edge("Fráncfort","Astana",weight=5.35)####8.41
+G.add_edge("Fráncfort","Astana",weight=5.35)
 G.add_edge("Astana","Taskent",weight=2.10)
 G.add_edge("Astana","Nueva Delhi",weight=6.40)
 G.add_edge("Nueva Delhi","Bombay",weight=2.10)
-
-G.add_edge("Fráncfort","Astaná",weight=5.35)
 G.add_edge("Astaná","Pekín",weight=5.15)
 G.add_edge("Madrid","Estambul",weight=3.56)
 G.add_edge("Estambul","Nueva Delhi",weight=5.55)
 G.add_edge("Nueva Delhi","Bangkok",weight=3.55)
 G.add_edge("Bangkok","Shanghái",weight=4.06)
-G.add_edge("Ámsterdam","Fráncfort",weight=0.58)####9.02
+G.add_edge("Ámsterdam","Fráncfort",weight=0.58)
+G.add_edge("París","Abuya",weight=6.03)
+G.add_edge("Abuya","Luanda",weight=6.47)
+G.add_edge("Tokio","Honolulu",weight=6.55)
+G.add_edge("Honolulu","Vancouver",weight=5.55)
+G.add_edge("Honolulu","Apia",weight=5.50)
+G.add_edge("Apia","Brisbane",weight=5.47)
+G.add_edge("Brisbane","Melbourne",weight=2.13)
+G.add_edge("Los Ángeles","Honolulu",weight=5.37)
+G.add_edge("Apia","Auckland",weight=4.05)
+G.add_edge("Abu Dabi","Bombay",weight=2.58)
+G.add_edge("Bombay","Bangkok",weight=4.17)
+G.add_edge("Bangkok","Yakarta",weight=3.21)
+G.add_edge("Yakarta","Perth",weight=4.16)
+G.add_edge("Perth","Melbourne",weight=3.52)
+G.add_edge("Tokio","Hong Kong",weight=4.12)
+G.add_edge("Ciudad de México","Los Ángeles",weight=3.37)
+G.add_edge("New York","Los Ángeles",weight=6.11)
+G.add_edge("Tokio","Seúl",weight=2.04)
+G.add_edge("Dallas","Los Ángeles",weight=2.59)
+G.add_edge("Tokio","Shanghái",weight=2.43)
+G.add_edge("Shanghái","Daejeon",weight=2.00)
+G.add_edge("Tokio","Pekín",weight=3.07)
+G.add_edge("Pekín","Kaesong",weight=1.45)
+G.add_edge("Atlanta","Los Ángeles",weight=4.24)
+G.add_edge("San Francisco","Honolulu",weight=5.27)
+G.add_edge("Washington","San Francisco",weight=6.11)
+G.add_edge("Toronto","San Francisco",weight=5.44)
 
-########################################################################################
+G.add_edge("Ámsterdam","París",weight=1.00)
+G.add_edge("París","Rabat",weight=2.47)
 
 
+#G.add_edge("Rabat","El Cairo",weight=)
+G.add_edge("Rabat","París",weight=2.47)
+G.add_edge("París","El Cairo",weight=4.30)
+G.add_edge("El Cairo","Jartum",weight=2.31)
+G.add_edge("Jartum","Nairobi",weight=2.54) 
+G.add_edge("Nairobi","Harare",weight=2.56) 
+G.add_edge("Harare","Johannesburgo",weight=1.42)
 
-
-
+G.add_edge("Sao Paulo","Bogotá",weight=5.53)
 G.add_edge("San José","Montreal",weight=5.25)
 G.add_edge("París","Riad",weight=6.18)
 G.add_edge("Bogotá","Toronto",weight=5.55)
@@ -520,6 +531,7 @@ G.add_edge("Estambul","Abuya",weight=6.50)
 G.add_edge("Madrid","Abu Dabi",weight=6.50)
 G.add_edge("París","Abuya",weight=6.03)
 G.add_edge("Toronto","Londres",weight=6.55)
+
 G.add_edge("Londres","Abu Dabi",weight=6.55)
 G.add_edge("New York","Lisboa",weight=6.45)#IMPORTANTE
 G.add_edge("Bogotá","Cartagena", weight = 1.20)
@@ -677,7 +689,6 @@ G.add_edge("Tokio","Busan",weight=1.48)
 G.add_edge("Bangkok","Phuket",weight=1.21)
 G.add_edge("Tokio","Daejeon",weight=2.50)
 G.add_edge("Tokio","Kaesong",weight=2.40)
-G.add_edge("Tokio","Haeju",weight=2.50)
 G.add_edge("Tokio","Hiroshima",weight=1.22)
 G.add_edge("Tokio","Kioto",weight=1.10)
 G.add_edge("Tokio","Manila",weight=4.18)
@@ -704,7 +715,7 @@ G.add_edge("Ciudad de Panamá","Nueva Orleans",weight=4.00)
 G.add_edge("New York","Nueva Orleans",weight=3.33)
 G.add_edge("Los Ángeles","Seattle",weight=2.25)
 G.add_edge("San Francisco","Seattle",weight=2.11)
-G.add_edge("Ciuda de Panamá","Orlando",weight=3.11)
+G.add_edge("Ciudad de Panamá","Orlando",weight=3.11)
 G.add_edge("Dallas","Las Vegas",weight=2.37)
 G.add_edge("Ciudad de Panamá","La Habana",weight=2.28)
 G.add_edge("Ciudad de México","La Habana",weight=2.43)
@@ -721,9 +732,8 @@ G.add_edge("Toronto","Ottawa",weight=0.58)
 G.add_edge("Ottawa","Winnipeg",weight=2.37)
 G.add_edge("Bogotá","Cartago",weight=2.15)
 G.add_edge("Ciudad de Panamá","Liberia",weight=1.22)
-G.add_edge("Seúl","Tokio",weight=2.30)
-
-
+G.add_edge("Ciudad de Panamá","Dallas",weight=4.29)
+G.add_edge("Río de Janeiro","Bogotá",weight=6.09)
 
 def Escala():
     node_color = ['#7B241C', '#3333FF', '#34495E', '#FF3333', '#6C3483','#0E6655','#9C640C','#5F6A6A','#17202A','#D4AC0D','#C39BD3','#58D68D','#5D6D7E','#D98880','#5499C7','#24DB11']
