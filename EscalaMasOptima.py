@@ -1,6 +1,5 @@
 
-#!/usr/bin/env python
-#-*- coding: utf-8 -*-
+#PROYECTO FINAL TEORÍA DE GRAFOS
 
 import networkx as nx
 import matplotlib.pyplot as plt
@@ -92,23 +91,27 @@ G.add_node("Viena", pos=(150,300))#YA
 
 Austria = ["Viena"]
 
+
 #Finlandia
 G.add_node("Helsinki", pos=(180,310))#YA
 G.add_node("Turku", pos=(170,290))#YA
 
 Finlandia = ["Helsinki","Turku"]
 
+
 #Suecia
 G.add_node("Estocolmo", pos=(100,600))#YA
 
 Suecia = ["Estocolmo"]
+
 
 #Países bajos
 
 G.add_node("Ámsterdam",pos=(150,100))#YA
 PaisesBajos = ["Ámsterdam"]
 
-Europa = [Italia, Francia, España, Alemania, Polonia, Inglaterra, Irlanda, Portugal, Grecia, Rumanía, Austria, Finlandia,Suecia, PaisesBajos]
+
+Europa = [Italia, Francia, España, Alemania, Polonia, Inglaterra, Irlanda, Portugal, Grecia, Rumanía, Austria, Finlandia, Suecia, PaisesBajos]
 Europa1 = ["Italia", "Francia", "España", "Alemania", "Polonia", "Inglaterra", "Irlanda", "Portugal", "Grecia", "Rumanía", "Austria", "Finlandia", "Suecia", "Paises Bajos"]
 
 #AFRICA---------------------------------------------------------------------------
@@ -145,6 +148,7 @@ G.add_node("Abuya", pos=(170,-30))#YA
 
 Nigeria = ["Abuya"]
 
+
 #Angola
 G.add_node("Luanda", pos=(210,-30))#YA
 
@@ -176,8 +180,9 @@ G.add_node("Harare",pos=(320,300))
 
 Zimbabue = ["Harare"]
 
-Africa1 = ["Marruecos", "Argelia", "Egipto", "Sudán", "Nigeria","Angola", "Botsuana", "Sudáfrica","Kenia","Zimbabue"]
-Africa = [Marruecos, Argelia, Egipto, Sudán, Nigeria, Angola, Botsuana, Sudáfrica,Kenia,Zimbabue]
+
+Africa1 = ["Marruecos", "Argelia", "Egipto", "Sudán", "Nigeria","Angola", "Botsuana", "Sudáfrica", "Kenia", "Zimbabue"]
+Africa = [Marruecos, Argelia, Egipto, Sudán, Nigeria, Angola, Botsuana, Sudáfrica, Kenia, Zimbabue]
 
 #ASIA---------------------------------------------------------------------------
 
@@ -203,6 +208,7 @@ G.add_node("Nueva Delhi", pos=(120,160))#YA
 
 India = ["Bombay", "Nueva Delhi"]
 
+
 #China
 G.add_node("Pekín", pos=(210, 60))#YA
 G.add_node("Shanghái", pos=(230,40))#YA
@@ -210,6 +216,7 @@ G.add_node("Shenzhen", pos=(220,50))#YA
 G.add_node("Hong Kong",pos=(240,60))#YA
 
 China = ["Pekín", "Shanghái", "Shenzhen", "Hong Kong"]
+
 
 #Kazajistán
 G.add_node("Astaná", pos=(200,310))#YA
@@ -239,11 +246,13 @@ G.add_node("Abu Dabi", pos=(230,100))#YA
 
 EmiratosÁrabesUnidos = ["Dubái", "Abu Dabi"]
 
+
 #Indonesia
 G.add_node("Yakarta", pos=(300,470))#YA
 G.add_node("Surabaya", pos=(320,450))#YA
 
 Indonesia = ["Yakarta", "Surabaya"]
+
 
 #Tailandia
 G.add_node("Bangkok", pos=(300,120))#YA
@@ -302,10 +311,12 @@ G.add_node("Auckland", pos=(550,110))#YA
 
 NuevaZelanda = ["Wellington", "Auckland"]
 
+
 #Samoa
 G.add_node("Apia",pos=(600,150))
 
 Samoa = ["Apia"]
+
 
 Oceanía = [Australia, NuevaZelanda, Samoa]
 Oceanía1 = ["Australia", "Nueva Zelanda", "Samoa"]
@@ -319,11 +330,13 @@ G.add_node("Cartagena", pos=(60, -70))#YA
 
 Colombia = ["Bogotá","Medellin","Cartagena"]
 
+
 #Ecuador
 G.add_node("Quito", pos=(-200,-50))#YA
 G.add_node("Guayaquil", pos=(-250,-90))#YA
 
 Ecuador = ["Quito","Guayaquil"]
+
 
 #Perú
 G.add_node("Lima", pos=(-20, -100))#YA
@@ -331,12 +344,13 @@ G.add_node("Cusco", pos=(-50,-130))#YA
 
 Perú = ["Lima","Cusco"]
 
+
 #Brasil
 G.add_node("Río de Janeiro", pos=(5, -100))#YA
 G.add_node("Sao Paulo", pos=(50,-90))#YA
 
-
 Brasil = ["Río de Janeiro","Sao Paulo"]
+
 
 #Chile
 G.add_node("Santiago", pos=(-140,-80))#YA
@@ -344,17 +358,20 @@ G.add_node("Concepción", pos=(-180,-100))#YA
 
 Chile = ["Santiago","Concepción"]
 
+
 #Argentina
 G.add_node("Buenos Aires", pos=(-150,-90))#YA
 G.add_node("La Plata", pos=(-160,-200))#YA
 
 Argentina = ["Buenos Aires","La Plata"]
 
+
 #Uruguay
 G.add_node("Montevideo", pos=(-130,-100))#YA
 G.add_node("Punta del Este", pos=(-110,-70))#YA
 
 Uruguay = ["Montevideo","Punta del Este"]
+
 
 SurÁmerica = [Colombia,  Ecuador, Perú, Brasil, Chile, Argentina, Uruguay]
 SurÁmerica1 = ["Colombia", "Ecuador", "Perú", "Brasil", "Chile", "Argentina", "Uruguay"]
@@ -379,10 +396,12 @@ G.add_node("Honolulu",pos = (-250,100))
 
 EstadosUnidos = ["Houston","Dallas","Nueva Orleans","Seattle","San Francisco","Las Vegas","Los Ángeles","Atlanta","Orlando","Miami","Washington","New York","Chicago","Honolulu"]
 
+
 #Panamá
 G.add_node("Ciudad de Panamá", pos=(0, -70))#YA
 
 Panamá = ["Ciudad de Panamá"]
+
 
 #Costa Rica
 G.add_node("Cartago", pos=(-300,80))#YA
@@ -391,10 +410,12 @@ G.add_node("Liberia", pos=(-310,60))
 
 CostaRica = ["Cartago","San José","Liberia"]
 
+
 #Cuba
 G.add_node("La Habana", pos=(-310,-100))#YA
 
 Cuba = ["La Habana"]
+
 
 #México
 G.add_node("Ciudad de México", pos=(-380,120))#YA
@@ -405,6 +426,7 @@ G.add_node("Cancún", pos=(-390,230))#YA
 
 México = ["Ciudad de México","Guadalajara","Monterrey","Acapulco","Cancún"]
 
+
 #Canadá
 G.add_node("Toronto", pos=(-10,150))#YA
 G.add_node("Montreal", pos=(-25, 135))#YA
@@ -413,6 +435,7 @@ G.add_node("Winnipeg", pos=(-80,10))
 G.add_node("Ottawa", pos=(-60,110))#YA#YA
 
 Canadá = ["Toronto","Montreal","Vancouver","Winnipeg","Ottawa"]
+
 
 NorteÁmerica = [EstadosUnidos, Panamá, CostaRica, Cuba, México, Canadá]
 NorteÁmerica1 =["Estados Unidos", "Panamá", "Costa Rica", "Cuba", "México", "Canadá"]
@@ -425,10 +448,8 @@ G.add_edge("Helsinki","Moscú",weight=1.45)
 G.add_edge("Moscú","Astana",weight=3.20)
 G.add_edge("Astana","Pekín",weight=5.15)
 G.add_edge("Pekín","Hong Kong",weight=3.45)
-
 G.add_edge("Ciudad de Panamá","Miami",weight=5.35)
 G.add_edge("Miami","Montreal",weight=3.21)
-
 G.add_edge("Varsovia","Moscú",weight=2.00)
 G.add_edge("Moscú","Kazán",weight=1.40)
 G.add_edge("Lisboa","Milán",weight=2.40)
@@ -448,7 +469,6 @@ G.add_edge("Chicago","New York",weight=2.09)
 G.add_edge("New York","Versalles",weight=6.50)
 G.add_edge("Santo Domingo","Nueva York",weight=4.07)
 G.add_edge("Nueva York","París",weight=6.50)
-
 G.add_edge("Toronto","Lisboa",weight=7.00)
 G.add_edge("Lisboa","Zúrich",weight=2.39)
 G.add_edge("Lisboa","Moscú",weight=5.23)
@@ -505,17 +525,14 @@ G.add_edge("Atlanta","Los Ángeles",weight=4.24)
 G.add_edge("San Francisco","Honolulu",weight=5.27)
 G.add_edge("Washington","San Francisco",weight=6.11)
 G.add_edge("Toronto","San Francisco",weight=5.44)
-
 G.add_edge("Ámsterdam","París",weight=1.00)
 G.add_edge("París","Rabat",weight=2.47)
-
 G.add_edge("Rabat","París",weight=2.47)
 G.add_edge("París","El Cairo",weight=4.30)
 G.add_edge("El Cairo","Jartum",weight=2.31)
-G.add_edge("Jartum","Nairobi",weight=2.54) 
-G.add_edge("Nairobi","Harare",weight=2.56) 
+G.add_edge("Jartum","Nairobi",weight=2.54)
+G.add_edge("Nairobi","Harare",weight=2.56)
 G.add_edge("Harare","Johannesburgo",weight=1.42)
-
 G.add_edge("Sao Paulo","Bogotá",weight=5.53)
 G.add_edge("San José","Montreal",weight=5.25)
 G.add_edge("París","Riad",weight=6.18)
@@ -529,14 +546,13 @@ G.add_edge("Estambul","Abuya",weight=6.50)
 G.add_edge("Madrid","Abu Dabi",weight=6.50)
 G.add_edge("París","Abuya",weight=6.03)
 G.add_edge("Toronto","Londres",weight=6.55)
-
 G.add_edge("Londres","Abu Dabi",weight=6.55)
 G.add_edge("New York","Lisboa",weight=6.45)#IMPORTANTE
 G.add_edge("Bogotá","Cartagena", weight = 1.20)
 G.add_edge("Bogotá","Medellin", weight = 0.48)
 G.add_edge("Bogotá","Miami", weight = 3.31)
 G.add_edge("Bogotá", "Ciudad de Panamá", weight = 1.27)
-G.add_edge("Ciudad de Panamá", "La Habana", weight = 2.28) 
+G.add_edge("Ciudad de Panamá", "La Habana", weight = 2.28)
 G.add_edge("Bogotá","Atlanta",weight= 4.42)
 G.add_edge("Atlanta","New York",weight=2.02)
 G.add_edge("Miami","New York",weight=2.41)
@@ -732,6 +748,7 @@ G.add_edge("Ciudad de Panamá","Liberia",weight=1.22)
 G.add_edge("Ciudad de Panamá","Dallas",weight=4.29)
 G.add_edge("Río de Janeiro","Bogotá",weight=6.09)
 
+
 def Escala():
     node_color = ['#7B241C', '#3333FF', '#34495E', '#FF3333', '#6C3483','#0E6655','#9C640C','#5F6A6A','#17202A','#D4AC0D','#C39BD3','#58D68D','#5D6D7E','#D98880','#5499C7','#24DB11']
     color = []
@@ -739,167 +756,212 @@ def Escala():
     weight = nx.get_edge_attributes(G, 'weight')
     Edges = G.edges()
     Nodes = G.nodes()
+    print("\n")
     print("Ingrese el continente de salida y de llegada:")
     c = [Europa, Asia, Africa, SurÁmerica, NorteÁmerica, Oceanía]
-    c1 = ["Europa","Asia", "Africa","Sur Ámerica","Norte y Centro Ámerica","Oceanía"]
+    c1 = ["Europa","Asia", "Africa","Sur Ámerica","Norte Ámerica","Oceanía"]
     for i in range(len(c1)):
         print(i, ".Para ", c1[i])
 
-    print("\n"*2)
+    print("\n")
 
     cont = int(input("Continente salida: "))
     print("\n")
     cont1 = int(input("Continente llegada: "))
-    print("\n"*2)
-    print("Países de salida: ")
     print("\n")
+    print("Países de salida: ")
+    #print("\n")
     if cont == 0:
         for i in range(len(Europa1)):
              print(i, ".Para ", Europa1[i])
+        print("\n")
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = Europa[u]
+        print("Ciudades de salida: ")
         for i in range(len(pais)):
             print(i,".Para ", pais[i])
+        print("\n")
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-
+        print("\n")
 
 
     if cont == 1:
         for i in range(len(Asia1)):
              print(i, ".Para ", Asia1[i])
+        print("\n")
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = Asia[u]
+        print("Ciudades de salida: ")
         for i in range(len(pais)):
             print(i,". Para ", pais[i])
+        print("\n")
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
-
+        print("\n")
 
 
     if cont == 2:
         for i in range(len(Africa1)):
              print(i, ".Para ", Africa1[i])
+        print("\n")
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = Africa[u]
+        print("Ciudades de salida: ")
         for i in range(len(pais)):
             print(i,".Para ", pais[i])
+        print("\n")
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
+        print("\n")
 
 
     if cont == 3:
         for i in range(len(SurÁmerica1)):
              print(i, ".Para ", SurÁmerica1[i])
+        print("\n")
         u = int(input("Ingrese el país de salida: "))
         print("\n")
         pais = SurÁmerica[u]
+        print("Ciudades de salida: ")
         for i in range(len(pais)):
             print(i,".Para ", pais[i])
+        print("\n")
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
+        print("\n")
 
 
     if cont == 4:
         for i in range(len(NorteÁmerica1)):
              print(i, ".Para ", NorteÁmerica1[i])
+        print("\n")
         u = int(input("Ingrese el país de salida: "))
         pais = NorteÁmerica[u]
-        print("\n")
+        print("Ciudades de salida: ")
         for i in range(len(pais)):
             print(i,".Para ", pais[i])
+        print("\n")
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
+        print("\n")
 
 
     if cont == 5:
         for i in range(len(Oceanía1)):
              print(i, ".Para ", Oceanía1[i])
+        print("\n")
         u = int(input("Ingrese el país de salida: "))
         pais = Oceanía[u]
-        print("\n")
+        print("Ciudades de salida: ")
         for i in range(len(pais)):
             print(i,".Para ", pais[i])
+        print("\n")
         z = int(input("Ingrese la ciudad de salida: "))
         x = pais[z]
+        print("\n")
 
 
-    ######################
+######################################
+    print("\n")
+    print("Países de destino: ")
     if cont1 == 0:
         for i in range(len(Europa1)):
              print(i, ".Para ", Europa1[i])
+        print("\n")
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Europa[v]
         print("\n")
+        print("Ciudades de destino: ")
         for i in range(len(pais2)):
             print(i,".Para ", pais2[i])
+        print("\n")
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
+        print("\n")
 
 
     if cont1 == 1:
         for i in range(len(Asia1)):
              print(i, ".Para ", Asia1[i])
+        print("\n")
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Asia[v]
         print("\n")
+        print("Ciudades de destino: ")
         for i in range(len(pais2)):
             print(i,".Para ", pais2[i])
+        print("\n")
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
+        print("\n")
 
 
     if cont1 == 2:
         for i in range(len(Africa1)):
              print(i, ".Para ", Africa1[i])
+        print("\n")
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Africa[v]
         print("\n")
+        print("Ciudades de destino: ")
         for i in range(len(pais2)):
             print(i,".Para ", pais2[i])
+        print("\n")
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
+        print("\n")
 
 
     if cont1 == 3:
         for i in range(len(SurÁmerica1)):
              print(i, ".Para ", SurÁmerica1[i])
+        print("\n")
         v = int(input("Ingrese el pais de destino: "))
         pais2 = SurÁmerica[v]
         print("\n")
+        print("Ciudades de destino: ")
         for i in range(len(pais2)):
             print(i,".Para ", pais2[i])
+        print("\n")
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
+        print("\n")
 
 
     if cont1 == 4:
         for i in range(len(NorteÁmerica1)):
              print(i, ".Para ", NorteÁmerica1[i])
+        print("\n")
         v = int(input("Ingrese el pais de destino: "))
         pais2 = NorteÁmerica[v]
         print("\n")
+        print("Ciudades de destino: ")
         for i in range(len(pais2)):
             print(i,".Para ", pais2[i])
+        print("\n")
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
+        print("\n")
 
 
     if cont1 == 5:
         for i in range(len(Oceanía1)):
              print(i, ".Para ", Oceanía1[i])
+        print("\n")
         v = int(input("Ingrese el pais de destino: "))
         pais2 = Oceanía[v]
         print("\n")
+        print("Ciudades de destino: ")
         for i in range(len(pais2)):
             print(i,".Para ", pais2[i])
+        print("\n")
         w = int(input("Ingrese la ciudad de destino:"))
         y = pais2[w]
-
-
+        print("\n")
 
 
     H = nx.Graph()
@@ -963,7 +1025,6 @@ def Escala():
             plt.show()
 
 
-
     if (y,x) in Edges and (y,x) in weight.keys():
         f = y,x
         z = weight.get(f)
@@ -1023,9 +1084,6 @@ def Escala():
             plt.show()
 
 
-
-
-
     if (x,y) not in Edges or (y,x) not in Edges:
         for i in Nodes:
             H.add_node(i,pos = pos.get(i))
@@ -1044,8 +1102,6 @@ def Escala():
             P.add_node(i, pos = (x,y))
             x += 200
             y += z
-
-
 
 
         for i in range(len(path)):
@@ -1078,3 +1134,4 @@ def Escala():
 
 
 Escala()
+
